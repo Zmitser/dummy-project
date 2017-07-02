@@ -1,0 +1,16 @@
+group 'by.zmitser.app'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    compile group: 'com.mihnita', name: 'color-loggers', version: '1.0.5'
+    compileOnly "org.projectlombok:lombok:1.16.16"
+}
